@@ -1,0 +1,2231 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Search Engine Optimization (SEO) Meta Tags -->
+    <title>
+      RAYAAN's NEXUS — Real-World Contributions & Algorithmic Architecture
+    </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta
+      name="title"
+      content="RAYAAN's NEXUS — Real-World Contributions & Algorithmic Architecture"
+    />
+    <meta
+      name="description"
+      content="Explore the sovereign digital ecosystem of Rayaan Tasnim: 13-year-old full-stack developer, Math Olympiad finalist, and tech prodigy from Mymensingh, Bangladesh. Architect of Prime-Factor.app and developer of zero-latency numerical compute engines under the IDAI Universe."
+    />
+    <meta
+      name="keywords"
+      content="Rayaan Tasnim, IDAI Universe, Prime-Factor.app, Olympiad Edge, Competitive Programming Mymensingh, Bangladesh Math Olympiad, Full Stack Developer Prodigy, Codeforces Expert Bangladesh, GSAP Tailwind Portfolio"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Rayaan Tasnim" />
+    <meta name="theme-color" content="#030712" />
+
+    <!-- Open Graph (OG) / Facebook Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://idai.universe" />
+    <!-- Replace with your actual deployed URL -->
+    <meta
+      property="og:title"
+      content="RAYAAN's NEXUS — Real-World Contributions & Algorithmic Architecture"
+    />
+    <meta
+      property="og:description"
+      content="Dive into the 12-section interactive matrix charting high-velocity software engineering, advanced discrete mathematics mentorship, open-source infrastructure, and global academic roadmaps by Rayaan Tasnim."
+    />
+    <meta
+      property="og:image"
+      content="https://idai.universeassets/og-nexus-preview.png"
+    />
+    <!-- Replace with your absolute hosted cover image URL -->
+    <meta property="og:site_name" content="RAYAAN's NEXUS" />
+
+    <!-- Twitter Card Metadata -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://idai.universe" />
+    <!-- Replace with your actual deployed URL -->
+    <meta
+      property="twitter:title"
+      content="RAYAAN's NEXUS — Real-World Contributions & Algorithmic Architecture"
+    />
+    <meta
+      property="twitter:description"
+      content="Sovereign digital footprint of Rayaan Tasnim. Featuring real-time interactive widgets, C++ performance benchmarking, and gamified Olympiad training mechanics built on GSAP and Tailwind CSS."
+    />
+    <meta
+      property="twitter:image"
+      content="https://idai.universeassets/og-nexus-preview.png"
+    />
+    <!-- Replace with your absolute hosted cover image URL -->
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              cyberViolet: "#a855f7",
+              electricBlue: "#3b82f6",
+              codeforcesRed: "#ef4444",
+              neonPink: "#ec4899",
+              limeGreen: "#84cc16",
+              matrixTeal: "#14b8a6",
+              solarYellow: "#eab308",
+              crimsonRed: "#dc2626",
+              plasmaCyan: "#06b6d4",
+              laserAmber: "#f59e0b",
+              radiantPurple: "#9333ea",
+              infiniteGold: "#d97706",
+            },
+            fontFamily: {
+              mono: ["Fira Code", "JetBrains Mono", "monospace"],
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom CSS Styles -->
+    <style>
+      body {
+        background-color: #020617;
+        color: #f8fafc;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+      }
+      .code-font {
+        font-family: "Fira Code", monospace;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+      /* Glowing Accent Effects */
+      .glow-violet {
+        box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+      }
+      .glow-blue {
+        box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+      }
+      .glow-red {
+        box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+      }
+      .glow-pink {
+        box-shadow: 0 0 25px rgba(236, 72, 153, 0.25);
+      }
+      .glow-lime {
+        box-shadow: 0 0 25px rgba(132, 204, 22, 0.25);
+      }
+      .glow-teal {
+        box-shadow: 0 0 25px rgba(20, 184, 166, 0.25);
+      }
+      .glow-yellow {
+        box-shadow: 0 0 25px rgba(234, 179, 8, 0.25);
+      }
+      .glow-cyan {
+        box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
+      }
+      .glow-amber {
+        box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+      }
+      .glow-purple {
+        box-shadow: 0 0 25px rgba(147, 51, 234, 0.25);
+      }
+      .glow-gold {
+        box-shadow: 0 0 25px rgba(217, 119, 6, 0.25);
+      }
+
+      .terminal-bg {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(12px);
+      }
+      /* Scanline Overlay */
+      .scanlines {
+        background:
+          linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+          linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.03),
+            rgba(0, 255, 0, 0.01),
+            rgba(0, 0, 255, 0.03)
+          );
+        background-size:
+          100% 4px,
+          6px 100%;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-cyan-500 selection:text-black">
+    <!-- GLOBAL NAVBAR -->
+    <nav
+      class="fixed top-0 left-0 w-full z-40 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80 px-6 py-4 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Brand -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div
+            class="w-9 h-9 rounded-lg bg-gradient-to-tr from-purple-600 via-cyan-500 to-emerald-400 p-[2px] transition-transform duration-300 group-hover:scale-105"
+          >
+            <div
+              class="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center font-extrabold text-black bg-clip-text bg-gradient-to-tr from-purple-400 to-cyan-400 code-font text-base"
+            >
+              RT
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="code-font text-sm font-bold tracking-widest text-slate-100 uppercase group-hover:text-cyan-400 transition-colors"
+              >RAYAAN'S NEXUS</span
+            >
+            <span class="text-[10px] text-slate-400 tracking-wider code-font"
+              >v4.09.26 // SYSTEM ARCHITECT</span
+            >
+          </div>
+        </a>
+
+        <!-- Navigation Controls -->
+        <div class="flex items-center gap-4">
+          <div
+            class="hidden md:flex items-center gap-6 code-font text-xs text-slate-300"
+          >
+            <a href="#hero" class="hover:text-purple-400 transition-colors"
+              >01.Hero</a
+            >
+            <a href="#section2" class="hover:text-blue-400 transition-colors"
+              >02.Mentor</a
+            >
+            <a href="#section3" class="hover:text-red-400 transition-colors"
+              >03.CP</a
+            >
+            <a href="#section5" class="hover:text-lime-400 transition-colors"
+              >05.MathSim</a
+            >
+            <a href="#section9" class="hover:text-cyan-400 transition-colors"
+              >09.Arch</a
+            >
+          </div>
+
+          <!-- Hamburger Button -->
+          <button
+            id="menu-toggle"
+            aria-label="Toggle Dashboard Menu"
+            class="p-2.5 rounded-lg bg-slate-900 border border-slate-700/60 hover:border-cyan-500 text-slate-200 transition-all focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="menu-icon-path"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SLIDE-OVER DASHBOARD OVERLAY -->
+    <div
+      id="dashboard-overlay"
+      class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300"
+    >
+      <!-- Backdrop -->
+      <div
+        id="overlay-backdrop"
+        class="absolute inset-0 bg-slate-950/80 backdrop-blur-md"
+      ></div>
+
+      <!-- Sliding Panel -->
+      <aside
+        id="overlay-panel"
+        class="fixed top-0 right-0 h-full w-full md:w-[450px] bg-slate-950/95 backdrop-blur-2xl border-l border-white/10 p-8 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl"
+      >
+        <div>
+          <div
+            class="flex justify-between items-center mb-8 pb-4 border-b border-slate-800"
+          >
+            <div>
+              <h2
+                class="code-font text-lg font-bold text-cyan-400 tracking-wider uppercase"
+              >
+                INDEX MATRIX
+              </h2>
+              <p class="text-xs text-slate-400 text-justify">
+                12 Core System Nodes
+              </p>
+            </div>
+            <button
+              id="menu-close"
+              class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Index Navigation List -->
+          <nav class="flex flex-col gap-3 code-font text-xs">
+            <a
+              href="#hero"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-purple-950/30 border border-slate-800 hover:border-purple-500/50 text-slate-300 hover:text-purple-300 flex items-center justify-between transition-all"
+            >
+              <span>01. HERO BANNER</span>
+              <span class="text-[10px] text-purple-400">Cyberpunk Violet</span>
+            </a>
+            <a
+              href="#section2"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-blue-950/30 border border-slate-800 hover:border-blue-500/50 text-slate-300 hover:text-blue-300 flex items-center justify-between transition-all"
+            >
+              <span>02. GRASSROOTS TECH</span>
+              <span class="text-[10px] text-blue-400">Electric Blue</span>
+            </a>
+            <a
+              href="#section3"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-red-950/30 border border-slate-800 hover:border-red-500/50 text-slate-300 hover:text-red-300 flex items-center justify-between transition-all"
+            >
+              <span>03. ALGORITHMIC MENTORSHIP</span>
+              <span class="text-[10px] text-red-400">Codeforces Red</span>
+            </a>
+            <a
+              href="#section4"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-pink-950/30 border border-slate-800 hover:border-pink-500/50 text-slate-300 hover:text-pink-300 flex items-center justify-between transition-all"
+            >
+              <span>04. AGE-BARRIER DEMOLITION</span>
+              <span class="text-[10px] text-pink-400">Hyper-Neon Pink</span>
+            </a>
+            <a
+              href="#section5"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-lime-950/30 border border-slate-800 hover:border-lime-500/50 text-slate-300 hover:text-lime-300 flex items-center justify-between transition-all"
+            >
+              <span>05. PRIME-FACTOR.APP</span>
+              <span class="text-[10px] text-lime-400">Math Lime</span>
+            </a>
+            <a
+              href="#section6"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-teal-950/30 border border-slate-800 hover:border-teal-500/50 text-slate-300 hover:text-teal-300 flex items-center justify-between transition-all"
+            >
+              <span>06. OPEN SOURCE INFRA</span>
+              <span class="text-[10px] text-teal-400">Matrix Teal</span>
+            </a>
+            <a
+              href="#section7"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-yellow-950/30 border border-slate-800 hover:border-yellow-500/50 text-slate-300 hover:text-yellow-300 flex items-center justify-between transition-all"
+            >
+              <span>07. OLYMPIAD EDGE ROADMAP</span>
+              <span class="text-[10px] text-yellow-400">Solar Yellow</span>
+            </a>
+            <a
+              href="#section8"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-rose-950/30 border border-slate-800 hover:border-rose-500/50 text-slate-300 hover:text-rose-300 flex items-center justify-between transition-all"
+            >
+              <span>08. CP TOOLING & TEMPLATES</span>
+              <span class="text-[10px] text-rose-400">Crimson Red</span>
+            </a>
+            <a
+              href="#section9"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-cyan-950/30 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-cyan-300 flex items-center justify-between transition-all"
+            >
+              <span>09. SYSTEMS ARCHITECTURE</span>
+              <span class="text-[10px] text-cyan-400">Plasma Cyan</span>
+            </a>
+            <a
+              href="#section10"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-amber-950/30 border border-slate-800 hover:border-amber-500/50 text-slate-300 hover:text-amber-300 flex items-center justify-between transition-all"
+            >
+              <span>10. ORIGINAL MATH CURATION</span>
+              <span class="text-[10px] text-amber-400">Laser Amber</span>
+            </a>
+            <a
+              href="#section11"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-purple-950/30 border border-slate-800 hover:border-purple-500/50 text-slate-300 hover:text-purple-300 flex items-center justify-between transition-all"
+            >
+              <span>11. LOCALIZED ADVOCACY</span>
+              <span class="text-[10px] text-purple-400">Radiant Purple</span>
+            </a>
+            <a
+              href="#section12"
+              class="overlay-nav-link p-2.5 rounded-lg bg-slate-900/40 hover:bg-amber-950/30 border border-slate-800 hover:border-amber-500/50 text-slate-300 hover:text-amber-300 flex items-center justify-between transition-all"
+            >
+              <span>12. THE NEXT ARCHITECTURE</span>
+              <span class="text-[10px] text-amber-400">Infinite Gold</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Panel Footer -->
+        <div
+          class="pt-6 border-t border-slate-800 text-slate-500 text-[11px] code-font flex justify-between items-center"
+        >
+          <span>PRESS ESC TO DISMISS</span>
+          <span class="text-slate-400">IDAI-OS v4.9</span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINERS -->
+    <main class="w-full">
+      <!-- SECTION 1: HERO BANNER (Cyberpunk Violet) -->
+      <section
+        id="hero"
+        class="relative min-h-screen pt-28 pb-20 px-6 flex items-center justify-center border-b border-slate-800/80 overflow-hidden bg-slate-950"
+      >
+        <!-- Background Canvas Particles -->
+        <canvas
+          id="hero-canvas"
+          class="absolute inset-0 w-full h-full opacity-35 pointer-events-none"
+        ></canvas>
+
+        <div
+          class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <!-- Left Column Header & Copy -->
+          <div class="lg:col-span-7 space-y-6 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs font-mono tracking-wide"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-purple-400 animate-ping"
+              ></span>
+              FULL-STACK DEVELOPER & MATH OLYMPIAD FINALIST (AGE 13)
+            </div>
+
+            <h1
+              class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight"
+            >
+              Real World Contributions <br />
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-300 to-indigo-400"
+              >
+                and Mentorships
+              </span>
+            </h1>
+
+            <p
+              class="text-slate-300 text-base md:text-lg leading-relaxed text-justify font-normal"
+            >
+              At age 13, Rayaan Tasnim engineers sovereign high-performance
+              digital ecosystems designed to bridge elite discrete mathematics,
+              distributed microservices, and grassroots algorithmic mentorship
+              across Bangladesh. Operating under his unified architectural
+              paradigm—the IDAI Universe—Rayaan decouples system complexity into
+              modular, resilient software components. His journey combines
+              rigorous Math Olympiad problem-solving with high-throughput
+              backend infrastructure, proving that deep computational design
+              knows no age barriers. From developing low-latency competitive
+              programming engines to restructuring IT learning pathways for
+              underprivileged students, Rayaan actively architects software
+              solutions that empower human capability through mathematically
+              sound logic.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-4 code-font">
+              <a
+                href="#section5"
+                class="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-all transform hover:-translate-y-0.5 glow-violet shadow-lg text-sm"
+              >
+                Launch Prime-Factor.app
+              </a>
+              <a
+                href="#section9"
+                class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold transition-all text-sm"
+              >
+                Inspect Systems Architecture
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column Interactive Debug Terminal -->
+          <div class="lg:col-span-5 gsap-reveal">
+            <div
+              class="rounded-2xl border border-purple-500/30 overflow-hidden shadow-2xl terminal-bg glow-violet"
+            >
+              <div
+                class="bg-slate-900 px-4 py-3 flex items-center justify-between border-b border-slate-800"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="w-3 h-3 rounded-full bg-red-500/80 inline-block"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-green-500/80 inline-block"
+                  ></span>
+                  <span class="ml-2 text-xs code-font text-slate-400"
+                    >rayaan@idai-kernel:~</span
+                  >
+                </div>
+                <span
+                  class="text-[10px] code-font text-purple-400 bg-purple-950/80 px-2 py-0.5 rounded border border-purple-800"
+                  >LIVE FEED</span
+                >
+              </div>
+
+              <div
+                class="p-5 code-font text-xs space-y-3 h-80 overflow-y-auto scrollbar-thin text-slate-300"
+                id="terminal-output"
+              >
+                <div class="text-slate-500">
+                  // Bootstrapping IDAI Universe Kernel v4.09
+                </div>
+                <div>
+                  <span class="text-purple-400">[INIT]</span> Math Olympiad
+                  Engine loaded. System status: NOMINAL
+                </div>
+                <div>
+                  <span class="text-cyan-400">[NET]</span> Connecting to
+                  Codeforces API endpoint... Verified.
+                </div>
+                <div>
+                  <span class="text-emerald-400">[OK]</span> Prime-Factor
+                  algorithm benchmark: 0.00042ms
+                </div>
+                <div>
+                  <span class="text-yellow-400">[WARN]</span> High concurrency
+                  demand detected on Segment Tree Node.
+                </div>
+                <div>
+                  <span class="text-purple-400">[EXEC]</span> Allocating memory
+                  for Fast-I/O binary parser...
+                </div>
+                <div id="typing-line" class="text-purple-300 font-bold"></div>
+              </div>
+
+              <div
+                class="bg-slate-950 p-3 border-t border-slate-800/80 flex items-center justify-between text-xs code-font text-slate-400"
+              >
+                <span>Status: ACTIVE_LISTENER</span>
+                <span class="text-emerald-400">100% Deterministic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: GRASSROOTS TECH CURRICULUM (Electric Blue) -->
+      <section
+        id="section2"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <!-- Visual / Image -->
+          <div class="lg:col-span-5 order-2 lg:order-1 gsap-reveal">
+            <div
+              class="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl glow-blue"
+            >
+              <img
+                src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Microcircuitry and Coding"
+                loading="lazy"
+                class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"
+              ></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span
+                  class="px-2.5 py-1 rounded bg-blue-900/80 text-blue-300 text-xs code-font border border-blue-500/40"
+                  >UPS TECH CURRICULUM MAP</span
+                >
+                <p class="text-xs text-slate-300 mt-1">
+                  Unique Progressive School Grassroots Initiative
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Copy & Interactive Widget -->
+          <div class="lg:col-span-7 order-1 lg:order-2 space-y-6 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-500/40 text-blue-400 text-xs font-mono"
+            >
+              SECTION 02 // GRASSROOTS ADVOCACY
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Volunteer IT Mentor at
+              <span class="text-blue-400">Unique Progressive School</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Recognizing systemic gaps in computer science education across
+              rural and underserved regions of Bangladesh, Rayaan launched a
+              volunteer IT mentorship program targeted at students at the Unique
+              Progressive School. Rather than relying on outdated software
+              literacy modules, he designed an interactive structural curriculum
+              path starting from elementary mathematical logic and binary
+              arithmetic, advancing directly to modular Python programming and
+              computational thinking. His methodology centers on breaking down
+              intimidating engineering concepts into hands-on visual
+              experiments. Through customized workshop modules, Rayaan has
+              empowered over 150 young learners to compose their first
+              algorithms, build simple micro-applications, and cultivate
+              critical problem-solving mindsets indispensable for the modern
+              tech landscape.
+            </p>
+
+            <!-- Interactive Tree-Map Grid Chart -->
+            <div
+              class="bg-slate-900/90 rounded-2xl p-6 border border-blue-500/30 space-y-4"
+            >
+              <div
+                class="flex justify-between items-center pb-2 border-b border-slate-800"
+              >
+                <span
+                  class="code-font text-xs font-bold text-blue-400 uppercase"
+                  >Interactive Curriculum Tree-Map</span
+                >
+                <span class="text-[10px] text-slate-400"
+                  >Click node to inspect syllabus</span
+                >
+              </div>
+              <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-3 code-font text-xs"
+                id="curriculum-tree"
+              >
+                <button
+                  onclick="selectTreeModule('mod1')"
+                  class="p-3 rounded-xl bg-blue-950/40 border border-blue-500/40 text-left hover:bg-blue-900/40 transition-all text-blue-300 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  01. Binary & Logic
+                </button>
+                <button
+                  onclick="selectTreeModule('mod2')"
+                  class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-left hover:bg-slate-800 transition-all text-slate-400 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  02. Algorithmic Flow
+                </button>
+                <button
+                  onclick="selectTreeModule('mod3')"
+                  class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-left hover:bg-slate-800 transition-all text-slate-400 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  03. Python Primitives
+                </button>
+                <button
+                  onclick="selectTreeModule('mod4')"
+                  class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-left hover:bg-slate-800 transition-all text-slate-400 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  04. Mini Projects
+                </button>
+              </div>
+              <div
+                id="tree-detail"
+                class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 leading-relaxed text-justify font-mono"
+              >
+                <span class="text-blue-400 font-bold"
+                  >[Module 01: Binary & Logic]</span
+                >
+                Focuses on Truth Tables, Boolean Algebra, Binary Counting, and
+                Hardware Logic Gate simulations using interactive paper kits.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: ALGORITHMIC MENTORSHIP (Codeforces Red) -->
+      <section
+        id="section3"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <!-- Content Left -->
+          <div class="lg:col-span-6 space-y-6 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-500/40 text-red-400 text-xs font-mono"
+            >
+              SECTION 03 // CP COACHING
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Mentoring Newbies at
+              <span class="text-red-500">Dreamers Academy</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Competitive programming requires rigorous time complexity
+              analysis, deep data structure mastery, and rapid problem
+              decomposition under contest conditions. At Dreamers Academy,
+              Rayaan serves as a peer mentor and algorithmic instructor for
+              novice coders aspiring to compete on global platforms like
+              Codeforces, AtCoder, and CSES. He conducts specialized training
+              modules covering Segment Trees, Lazy Propagation, Disjoint Set
+              Union (DSU), and Dynamic Programming state optimizations. By
+              dissecting complex algorithmic patterns into intuitive visual
+              diagrams and step-by-step invariant proofs, Rayaan helps students
+              transition from basic syntax writing to crafting optimal $O(N \log
+              N)$ solutions, fostering a culture of algorithmic excellence and
+              competitive resilience.
+            </p>
+
+            <div
+              class="flex items-center gap-4 text-xs code-font text-slate-400"
+            >
+              <span class="flex items-center gap-1.5"
+                ><span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                Codeforces Focus</span
+              >
+              <span class="flex items-center gap-1.5"
+                ><span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                Segment Trees</span
+              >
+              <span class="flex items-center gap-1.5"
+                ><span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span> DP
+                Optimizations</span
+              >
+            </div>
+          </div>
+
+          <!-- Interactive Code Snippet Right -->
+          <div class="lg:col-span-6 gsap-reveal">
+            <div
+              class="rounded-2xl border border-red-500/40 overflow-hidden bg-slate-900 shadow-2xl glow-red"
+            >
+              <div
+                class="bg-slate-950 px-4 py-3 flex justify-between items-center border-b border-slate-800"
+              >
+                <span class="code-font text-xs text-red-400 font-bold"
+                  >SegmentTree_RangeSum.cpp</span
+                >
+                <span class="text-[10px] code-font text-slate-500"
+                  >HOVER LINES FOR TOOLTIPS</span
+                >
+              </div>
+              <div
+                class="p-4 code-font text-xs space-y-2 overflow-x-auto text-slate-300"
+              >
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">01</span
+                  ><span class="text-red-400">void</span> build(<span
+                    class="text-cyan-300"
+                    >int</span
+                  >
+                  node, <span class="text-cyan-300">int</span> start,
+                  <span class="text-cyan-300">int</span> end) {
+                  <div
+                    class="hidden group-hover:block absolute left-12 top-full z-20 w-64 p-2 bg-slate-950 border border-red-500/80 rounded text-[11px] text-red-200 shadow-xl"
+                  >
+                    Recursively splits array range [start, end] into left &
+                    right child nodes.
+                  </div>
+                </div>
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">02</span>
+                  <span class="text-purple-400">if</span> (start == end) {
+                  tree[node] = A[start];
+                  <span class="text-purple-400">return</span>; }
+                </div>
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">03</span>
+                  <span class="text-cyan-300">int</span> mid = (start + end) /
+                  <span class="text-emerald-400">2</span>;
+                  <div
+                    class="hidden group-hover:block absolute left-12 top-full z-20 w-64 p-2 bg-slate-950 border border-red-500/80 rounded text-[11px] text-red-200 shadow-xl"
+                  >
+                    Calculates midpoint to achieve guaranteed O(log N) tree
+                    depth.
+                  </div>
+                </div>
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">04</span> build(<span
+                    class="text-emerald-400"
+                    >2</span
+                  >*node, start, mid);
+                </div>
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">05</span> build(<span
+                    class="text-emerald-400"
+                    >2</span
+                  >*node+<span class="text-emerald-400">1</span>, mid+<span
+                    class="text-emerald-400"
+                    >1</span
+                  >, end);
+                </div>
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">06</span> tree[node] =
+                  tree[<span class="text-emerald-400">2</span>*node] +
+                  tree[<span class="text-emerald-400">2</span>*node+<span
+                    class="text-emerald-400"
+                    >1</span
+                  >];
+                  <div
+                    class="hidden group-hover:block absolute left-12 top-full z-20 w-64 p-2 bg-slate-950 border border-red-500/80 rounded text-[11px] text-red-200 shadow-xl"
+                  >
+                    Combines subtree query results in O(1) time after return.
+                  </div>
+                </div>
+                <div
+                  class="group relative hover:bg-slate-800/80 p-1 rounded transition-colors cursor-help"
+                >
+                  <span class="text-slate-500 mr-3">07</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: AGE-BARRIER DEMOLITION (Hyper-Neon Pink) -->
+      <section
+        id="section4"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div class="max-w-7xl mx-auto space-y-12">
+          <div class="max-w-3xl space-y-4 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-950/60 border border-pink-500/40 text-pink-400 text-xs font-mono"
+            >
+              SECTION 04 // MILESTONE PARADIGM
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Global Idol &
+              <span class="text-pink-500">Age-Barrier Demolition</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              In an industry frequently dominated by conventional university
+              metrics, Rayaan Tasnim has shattered traditional expectations
+              regarding youth and technical mastery. By age 13, he has deployed
+              production microservices, engineered custom algorithmic tooling,
+              and qualified for prestigious national Math Olympiad finals in
+              Bangladesh. Rather than viewing age as a constraint, Rayaan
+              leverages his agile learning trajectory to master complex
+              domain-specific architectures at an unprecedented speed. His
+              engineering contributions inspire a rising generation of youth
+              coders across South Asia, proving that rigorous logical reasoning,
+              continuous self-directed practice, and open-source collaboration
+              transcend traditional age boundaries.
+            </p>
+          </div>
+
+          <!-- Interactive Age vs Achievement Timeline Graph -->
+          <div
+            class="bg-slate-900/80 rounded-2xl p-6 md:p-8 border border-pink-500/30 glow-pink gsap-reveal"
+          >
+            <h3
+              class="code-font text-sm font-bold text-pink-400 mb-6 uppercase tracking-wider"
+            >
+              Interactive Timeline: Age vs System Deployments
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+              <div
+                onclick="highlightTimeline(10)"
+                class="timeline-card p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-pink-500/60 cursor-pointer transition-all"
+              >
+                <div class="text-2xl font-black text-pink-400 code-font mb-2">
+                  AGE 10
+                </div>
+                <div class="font-bold text-slate-200 text-sm mb-1">
+                  First C++ & Math Foundations
+                </div>
+                <p class="text-xs text-slate-400 text-justify">
+                  Mastered basic discrete logic, solved 300+ Euler mathematical
+                  problems.
+                </p>
+              </div>
+
+              <div
+                onclick="highlightTimeline(11)"
+                class="timeline-card p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-pink-500/60 cursor-pointer transition-all"
+              >
+                <div class="text-2xl font-black text-pink-400 code-font mb-2">
+                  AGE 11
+                </div>
+                <div class="font-bold text-slate-200 text-sm mb-1">
+                  Olympiad Arena Entry
+                </div>
+                <p class="text-xs text-slate-400 text-justify">
+                  Achieved regional distinction in BdMO (Bangladesh Mathematical
+                  Olympiad).
+                </p>
+              </div>
+
+              <div
+                onclick="highlightTimeline(12)"
+                class="timeline-card p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-pink-500/60 cursor-pointer transition-all"
+              >
+                <div class="text-2xl font-black text-pink-400 code-font mb-2">
+                  AGE 12
+                </div>
+                <div class="font-bold text-slate-200 text-sm mb-1">
+                  IDAI Universe Core
+                </div>
+                <p class="text-xs text-slate-400 text-justify">
+                  Architected sovereign microservice libraries and open-source
+                  CP templates.
+                </p>
+              </div>
+
+              <div
+                onclick="highlightTimeline(13)"
+                class="timeline-card p-5 rounded-xl bg-pink-950/40 border border-pink-500/60 cursor-pointer transition-all"
+              >
+                <div class="text-2xl font-black text-pink-400 code-font mb-2">
+                  AGE 13 (NOW)
+                </div>
+                <div class="font-bold text-slate-200 text-sm mb-1">
+                  National Olympiad Finalist
+                </div>
+                <p class="text-xs text-slate-300">
+                  Deployed Prime-Factor.app, mentoring 200+ students, building
+                  distributed systems.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="timeline-detail-box"
+              class="mt-6 p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs code-font text-pink-300 flex items-center justify-between"
+            >
+              <span
+                >Selected Focus: AGE 13 — Active System Deployment & National
+                Math Olympiad Circuit.</span
+              >
+              <span class="text-slate-500">STATUS: ACTIVE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: PRIME-FACTOR.APP (Mathematical Lime Green) -->
+      <section
+        id="section5"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <!-- Text Left -->
+          <div class="lg:col-span-6 space-y-6 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lime-950/60 border border-lime-500/40 text-lime-400 text-xs font-mono"
+            >
+              SECTION 05 // PRIME-FACTOR.APP
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Sovereign Math Web App:
+              <span class="text-lime-400">Prime-Factor.app</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Prime factorization lies at the core of RSA cryptography,
+              computational number theory, and advanced abstract algebra. To
+              make prime decomposition intuitive yet mathematically rigorous,
+              Rayaan engineered Prime-Factor.app—a web tool that combines
+              real-time factorization algorithms with an interactive mental
+              arithmetic simulator. Powered by optimized Pollard’s Rho and
+              modified Sieve of Eratosthenes engines compiled for web targets,
+              the application computes prime factors for massive integers in
+              microsecond intervals. Designed with a minimalist dark layout and
+              dynamic speed timers, Prime-Factor.app serves students, math
+              Olympians, and cryptography enthusiasts worldwide.
+            </p>
+            <div
+              class="flex items-center gap-6 code-font text-xs text-slate-400 text-justify"
+            >
+              <div>
+                <span class="text-lime-400 font-bold">O(N^1/4)</span> Pollard's
+                Rho
+              </div>
+              <div>
+                <span class="text-lime-400 font-bold">WebAssembly</span> Fast
+                Compute
+              </div>
+              <div>
+                <span class="text-lime-400 font-bold">Elo System</span> Adaptive
+                Scoring
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Mini Mind-Math Simulator Widget -->
+          <div class="lg:col-span-6 gsap-reveal">
+            <div
+              class="rounded-2xl border border-lime-500/40 bg-slate-900 p-6 shadow-2xl glow-lime space-y-5"
+            >
+              <div
+                class="flex justify-between items-center border-b border-slate-800 pb-3"
+              >
+                <span
+                  class="code-font text-xs font-bold text-lime-400 uppercase"
+                  >Mini Mind-Math Simulator</span
+                >
+                <span class="text-xs code-font text-slate-400"
+                  >Elo Rating:
+                  <strong id="math-elo" class="text-lime-300"
+                    >1200</strong
+                  ></span
+                >
+              </div>
+
+              <!-- Target Number Display -->
+              <div
+                class="text-center py-4 bg-slate-950 rounded-xl border border-slate-800"
+              >
+                <span
+                  class="text-xs text-slate-400 text-justify code-font block mb-1"
+                  >FACTORIZE THIS NUMBER (Space separated factors):</span
+                >
+                <span
+                  id="target-number"
+                  class="text-4xl font-extrabold text-lime-400 code-font tracking-wider"
+                  >84</span
+                >
+              </div>
+
+              <!-- Input and Submit -->
+              <div class="space-y-3">
+                <input
+                  type="text"
+                  id="factor-input"
+                  placeholder="e.g. 2 2 3 7"
+                  class="w-full bg-slate-950 border border-slate-700 focus:border-lime-400 rounded-xl p-3 code-font text-sm text-slate-100 focus:outline-none transition-colors"
+                />
+                <div class="flex gap-3">
+                  <button
+                    onclick="checkFactorization()"
+                    class="w-full py-3 rounded-xl bg-lime-600 hover:bg-lime-500 text-slate-950 font-bold code-font text-xs transition-all"
+                  >
+                    VERIFY FACTORIZATION
+                  </button>
+                  <button
+                    onclick="generateNewMathProblem()"
+                    class="px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 code-font text-xs transition-all"
+                  >
+                    NEW
+                  </button>
+                </div>
+              </div>
+
+              <!-- Live Timer Bar -->
+              <div class="space-y-1">
+                <div
+                  class="flex justify-between text-[10px] code-font text-slate-400"
+                >
+                  <span>TIME REMAINING</span>
+                  <span id="timer-val">15s</span>
+                </div>
+                <div
+                  class="w-full h-1.5 bg-slate-950 rounded-full overflow-hidden"
+                >
+                  <div
+                    id="timer-bar"
+                    class="h-full bg-lime-400 w-full transition-all duration-1000"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Feedback Box -->
+              <div
+                id="math-feedback"
+                class="p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs code-font text-center text-slate-400"
+              >
+                Type prime factors in ascending or space-separated order and
+                click verify.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: OPEN SOURCE INFRASTRUCTURE (GitHub Matrix Teal) -->
+      <section
+        id="section6"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div class="max-w-7xl mx-auto space-y-12">
+          <div class="max-w-3xl space-y-4 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-950/60 border border-teal-500/40 text-teal-400 text-xs font-mono"
+            >
+              SECTION 06 // OPEN SOURCE ECOSYSTEM
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Open Source Infrastructure &
+              <span class="text-teal-400">IDAI Universe</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Rayaan believes that sustainable engineering progresses through
+              open, modular contributions. Under his IDAI Universe GitHub
+              organization, he maintains open-source repositories ranging from
+              specialized C++ algorithm templates to WebAssembly-based
+              mathematical utilities. His contributions emphasize
+              zero-dependency architecture, high unit-test coverage, and strict
+              performance profiling. Developers across the global open-source
+              community leverage his algorithmic utilities to accelerate
+              competitive programming workflows and simplify discrete math
+              simulations.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 gsap-reveal">
+            <!-- Interactive Dependency Tree -->
+            <div
+              class="lg:col-span-5 bg-slate-900/90 rounded-2xl p-6 border border-teal-500/30 space-y-4"
+            >
+              <span
+                class="code-font text-xs font-bold text-teal-400 uppercase block border-b border-slate-800 pb-2"
+                >IDAI Architecture Dependency Tree</span
+              >
+              <div class="space-y-2 code-font text-xs text-slate-300">
+                <div
+                  onclick="inspectDep('kernel')"
+                  class="p-2.5 rounded bg-slate-950 border border-slate-800 hover:border-teal-500 cursor-pointer flex justify-between items-center"
+                >
+                  <span>[core] idai-kernel-v4</span>
+                  <span class="text-[10px] text-teal-400">C++20 / WASM</span>
+                </div>
+                <div
+                  onclick="inspectDep('math')"
+                  class="p-2.5 rounded bg-slate-950 border border-slate-800 hover:border-teal-500 cursor-pointer flex justify-between items-center ml-4"
+                >
+                  <span>├── [lib] prime-engine</span>
+                  <span class="text-[10px] text-teal-400">Pollard-Rho</span>
+                </div>
+                <div
+                  onclick="inspectDep('cp')"
+                  class="p-2.5 rounded bg-slate-950 border border-slate-800 hover:border-teal-500 cursor-pointer flex justify-between items-center ml-4"
+                >
+                  <span>└── [lib] fast-io-templates</span>
+                  <span class="text-[10px] text-teal-400">Custom Buffers</span>
+                </div>
+              </div>
+              <div
+                id="dep-inspect-box"
+                class="p-3 rounded bg-slate-950 border border-slate-800 text-xs code-font text-slate-400"
+              >
+                Click any node above to inspect open-source module parameters.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: OLYMPIAD EDGE ROADMAP (Solar Yellow) -->
+      <section
+        id="section7"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div class="max-w-7xl mx-auto space-y-12">
+          <div class="max-w-3xl space-y-4 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-950/60 border border-yellow-500/40 text-yellow-400 text-xs font-mono"
+            >
+              SECTION 07 // OLYMPIAD EDGE PLATFORM
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Olympiad Edge:
+              <span class="text-yellow-400">Structured Roadmap</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              To help aspiring Math Olympians navigate the vast landscape of
+              advanced combinatorics, number theory, geometry, and functional
+              equations, Rayaan created the Olympiad Edge platform. The platform
+              features an interactive phased learning roadmap that guides
+              students from basic modular arithmetic to international
+              contest-level problem solving. Each phase breaks down required
+              theoretical theorems alongside curated problem sets from past
+              National Math Olympiads and EGMO/IMO shortlists.
+            </p>
+          </div>
+
+          <!-- Phased Node Roadmap -->
+          <div
+            class="bg-slate-900/90 rounded-2xl p-6 md:p-8 border border-yellow-500/30 glow-yellow space-y-8 gsap-reveal"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Phase 1 -->
+              <div
+                onclick="loadRoadmapPhase(1)"
+                class="roadmap-node p-6 rounded-xl bg-slate-950 border border-yellow-500/40 hover:border-yellow-400 cursor-pointer transition-all space-y-3"
+              >
+                <div class="flex justify-between items-center">
+                  <span
+                    class="px-2 py-0.5 rounded bg-yellow-950 text-yellow-400 text-[10px] code-font border border-yellow-500/40"
+                    >PHASE 01</span
+                  >
+                  <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-100">
+                  Foundations & Modular Math
+                </h3>
+                <p class="text-xs text-slate-400 text-justify">
+                  Fermat's Little Theorem, Euclidean Algorithm, Pigeonhole
+                  Principle.
+                </p>
+              </div>
+
+              <!-- Phase 2 -->
+              <div
+                onclick="loadRoadmapPhase(2)"
+                class="roadmap-node p-6 rounded-xl bg-slate-950 border border-slate-800 hover:border-yellow-400 cursor-pointer transition-all space-y-3"
+              >
+                <div class="flex justify-between items-center">
+                  <span
+                    class="px-2 py-0.5 rounded bg-slate-900 text-slate-400 text-[10px] code-font border border-slate-800"
+                    >PHASE 02</span
+                  >
+                  <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-100">
+                  National Arena Mastery
+                </h3>
+                <p class="text-xs text-slate-400 text-justify">
+                  Chinese Remainder Theorem, Invariant Theory, Graph Eulerian
+                  Paths.
+                </p>
+              </div>
+
+              <!-- Phase 3 -->
+              <div
+                onclick="loadRoadmapPhase(3)"
+                class="roadmap-node p-6 rounded-xl bg-slate-950 border border-slate-800 hover:border-yellow-400 cursor-pointer transition-all space-y-3"
+              >
+                <div class="flex justify-between items-center">
+                  <span
+                    class="px-2 py-0.5 rounded bg-slate-900 text-slate-400 text-[10px] code-font border border-slate-800"
+                    >PHASE 03</span
+                  >
+                  <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-100">
+                  Global Shortlist Threshold
+                </h3>
+                <p class="text-xs text-slate-400 text-justify">
+                  Vieta Jumping, Functional Equations, Projective Geometry
+                  invariants.
+                </p>
+              </div>
+            </div>
+
+            <!-- Syllabus Preview Box -->
+            <div
+              id="roadmap-preview"
+              class="p-5 rounded-xl bg-slate-950 border border-slate-800 text-xs code-font text-slate-300 leading-relaxed text-justify space-y-2"
+            >
+              <span class="text-yellow-400 font-bold block"
+                >[PHASE 01 SYLLABUS]</span
+              >
+              <p>
+                Recommended Books: "Problem-Solving Strategies" by Arthur Engel,
+                "Number Theory" by Titu Andreescu. Practice 50 problems on
+                modular arithmetic invariants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: CP TOOLING & TEMPLATES (Crimson Red) -->
+      <section
+        id="section8"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <div class="lg:col-span-6 space-y-6 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-500/40 text-red-400 text-xs font-mono"
+            >
+              SECTION 08 // CP BENCHMARKING
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Competitive Tooling &
+              <span class="text-red-500">Fast-I/O Templates</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              In time-critical competitive programming contests where execution
+              bounds are constrained to 1.0 second, standard I/O streams
+              (`std::cin`/`std::cout`) introduce severe CPU overhead due to
+              flush synchronization. Rayaan designed high-performance C++
+              Fast-I/O templates utilizing custom memory-mapped buffer readers
+              (`fread`/`fwrite`) and bitwise integer parsers. By bypassing
+              default stream buffers, his templates achieve execution speedups
+              up to 4x compared to standard implementations, enabling solutions
+              to process millions of input integers comfortably within strict
+              contest time limits.
+            </p>
+          </div>
+
+          <!-- Interactive Side-by-Side Performance Evaluation Table -->
+          <div class="lg:col-span-6 gsap-reveal">
+            <div
+              class="bg-slate-900 rounded-2xl p-6 border border-red-500/30 glow-red space-y-4"
+            >
+              <div
+                class="flex justify-between items-center border-b border-slate-800 pb-3"
+              >
+                <span class="code-font text-xs font-bold text-red-400 uppercase"
+                  >I/O Execution Benchmark (10^7 Integers)</span
+                >
+                <button
+                  onclick="runBenchmarkSim()"
+                  class="px-3 py-1 rounded bg-red-600 hover:bg-red-500 text-white code-font text-xs transition-colors"
+                >
+                  RUN BENCHMARK
+                </button>
+              </div>
+
+              <div class="space-y-4 code-font text-xs">
+                <!-- Standard IO -->
+                <div class="space-y-1">
+                  <div class="flex justify-between text-slate-400">
+                    <span>Standard std::cin / std::cout</span>
+                    <span id="std-time" class="text-slate-300">420 ms</span>
+                  </div>
+                  <div
+                    class="w-full h-3 bg-slate-950 rounded-full overflow-hidden p-0.5 border border-slate-800"
+                  >
+                    <div
+                      id="std-bar"
+                      class="h-full bg-slate-600 rounded-full w-[85%] transition-all duration-700"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Fast IO -->
+                <div class="space-y-1">
+                  <div class="flex justify-between text-slate-400">
+                    <span>Rayaan's Custom Fast-I/O Template</span>
+                    <span id="fast-time" class="text-red-400 font-bold"
+                      >105 ms</span
+                    >
+                  </div>
+                  <div
+                    class="w-full h-3 bg-slate-950 rounded-full overflow-hidden p-0.5 border border-slate-800"
+                  >
+                    <div
+                      id="fast-bar"
+                      class="h-full bg-red-500 rounded-full w-[25%] transition-all duration-700"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-[11px] code-font text-slate-400 flex justify-between"
+              >
+                <span
+                  >SPEEDUP RATIO:
+                  <strong class="text-emerald-400">4.0x FAST</strong></span
+                >
+                <span
+                  >CPU BOUND:
+                  <strong class="text-slate-200">OPTIMAL</strong></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: DEEP SYSTEMS ARCHITECTURE (Plasma Cyan) -->
+      <section
+        id="section9"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div class="max-w-7xl mx-auto space-y-12">
+          <div class="max-w-3xl space-y-4 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/40 text-cyan-400 text-xs font-mono"
+            >
+              SECTION 09 // HIGH CONCURRENCY
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Deep Systems
+              <span class="text-cyan-400">Architecture & Latency Tuning</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Modern distributed systems demand low-latency network pipelines
+              and minimal memory footprint under concurrent workloads. Rayaan
+              explores system-level architecture by building lightweight web
+              servers, memory-efficient cache implementations, and WebAssembly
+              computing modules. His designs prioritize zero-copy data
+              transformations, non-blocking I/O loops, and asynchronous event
+              scheduling to maintain microsecond query responses even during
+              high compute spikes.
+            </p>
+          </div>
+
+          <!-- Real-Time Updating Latency Simulation Canvas/Graph -->
+          <div
+            class="bg-slate-900/90 rounded-2xl p-6 md:p-8 border border-cyan-500/30 glow-cyan space-y-6 gsap-reveal"
+          >
+            <div
+              class="flex justify-between items-center border-b border-slate-800 pb-4"
+            >
+              <div>
+                <h3 class="code-font text-sm font-bold text-cyan-400 uppercase">
+                  Real-Time Microservice Latency Telemetry
+                </h3>
+                <p class="text-xs text-slate-400 text-justify">
+                  Simulated 10,000 req/sec load profiling
+                </p>
+              </div>
+              <div class="flex items-center gap-4 code-font text-xs">
+                <span class="text-slate-400"
+                  >AVG:
+                  <strong id="avg-lat" class="text-cyan-300"
+                    >1.2ms</strong
+                  ></span
+                >
+                <span class="text-slate-400"
+                  >P99:
+                  <strong id="p99-lat" class="text-emerald-400"
+                    >3.4ms</strong
+                  ></span
+                >
+              </div>
+            </div>
+
+            <!-- Latency Visualizer Canvas -->
+            <div
+              class="w-full h-48 bg-slate-950 rounded-xl border border-slate-800 p-2 relative overflow-hidden"
+            >
+              <canvas id="latency-canvas" class="w-full h-full block"></canvas>
+            </div>
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center code-font text-xs"
+            >
+              <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+                <span class="text-slate-500 block text-[10px]">THROUGHPUT</span>
+                <span class="text-cyan-400 font-bold">14,200 req/s</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+                <span class="text-slate-500 block text-[10px]"
+                  >CACHE HIT RATIO</span
+                >
+                <span class="text-emerald-400 font-bold">99.4%</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+                <span class="text-slate-500 block text-[10px]"
+                  >ALLOCATED MEMORY</span
+                >
+                <span class="text-purple-400 font-bold">14.2 MB</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+                <span class="text-slate-500 block text-[10px]"
+                  >THREAD WORKERS</span
+                >
+                <span class="text-yellow-400 font-bold">8 Cores</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: ORIGINAL MATH CURATION (Laser Amber) -->
+      <section
+        id="section10"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <!-- Text Left -->
+          <div class="lg:col-span-6 space-y-6 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/60 border border-amber-500/40 text-amber-400 text-xs font-mono"
+            >
+              SECTION 10 // MATHEMATICAL CREATIVITY
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Original Mathematical
+              <span class="text-amber-400">Problem Curation</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Beyond solving competitive problems, Rayaan formulates original
+              mathematical questions in combinatorics and number theory for
+              local Olympiad training camps. Authoring high-quality Olympiad
+              problems requires deep structural insight—creating elegant problem
+              statements with hidden symmetries, non-trivial invariants, and
+              rigorous proof solutions. Rayaan's problems challenge students to
+              think beyond standard algebraic manipulation and discover
+              non-obvious combinatorial bijections.
+            </p>
+          </div>
+
+          <!-- Reveal Solution Accordion Right -->
+          <div class="lg:col-span-6 gsap-reveal">
+            <div
+              class="bg-slate-900 rounded-2xl p-6 border border-amber-500/30 glow-amber space-y-4"
+            >
+              <div
+                class="flex justify-between items-center border-b border-slate-800 pb-3"
+              >
+                <span
+                  class="code-font text-xs font-bold text-amber-400 uppercase"
+                  >Authored Problem #049 (Combinatorics)</span
+                >
+                <span
+                  class="px-2 py-0.5 rounded bg-amber-950 text-amber-300 text-[10px] code-font border border-amber-500/40"
+                  >OLYMPIAD FINAL LEVEL</span
+                >
+              </div>
+
+              <!-- Problem Statement -->
+              <div
+                class="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs code-font text-slate-200 leading-relaxed text-justify"
+              >
+                <p class="text-amber-300 font-bold mb-2">PROBLEM STATEMENT:</p>
+                Let $S = \{1, 2, \dots, 2n\}$. A subset $A \subseteq S$ is
+                termed <em>balanced</em> if no two elements in $A$ sum to $2n +
+                1$. Determine the exact number of balanced subsets of $S$
+                containing exactly $n$ elements.
+              </div>
+
+              <!-- Accordion Trigger Button -->
+              <button
+                onclick="toggleMathSolution()"
+                class="w-full py-3 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700 text-amber-400 code-font text-xs font-bold flex justify-between items-center px-4 transition-all"
+              >
+                <span>REVEAL RIGOROUS PROOF & SOLUTION</span>
+                <span id="accordion-arrow">▼</span>
+              </button>
+
+              <!-- Accordion Content -->
+              <div
+                id="math-solution-box"
+                class="hidden p-4 bg-slate-950 rounded-xl border border-amber-500/40 text-xs code-font text-slate-300 space-y-2 leading-relaxed text-justify"
+              >
+                <p class="text-emerald-400 font-bold">PROOF OVERVIEW:</p>
+                <p>
+                  Partition $S$ into $n$ disjoint pairs $P_i = \{i, 2n + 1 -
+                  i\}$ for $i = 1, 2, \dots, n$. For a subset $A$ of size $n$ to
+                  be balanced, $A$ cannot contain both elements of any pair
+                  $P_i$.
+                </p>
+                <p>
+                  Since $|A| = n$, $A$ must choose <em>exactly one</em> element
+                  from each of the $n$ disjoint pairs $P_i$. Thus, each pair
+                  provides 2 independent choices.
+                </p>
+                <p class="text-amber-300 font-bold pt-1">
+                  FINAL RESULT: Total balanced subsets = $2^n$. $\blacksquare$
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 11: LOCALIZED CS ADVOCACY (Radiant Purple) -->
+      <section
+        id="section11"
+        class="py-24 px-6 border-b border-slate-800/80 bg-slate-950 relative"
+      >
+        <div class="max-w-7xl mx-auto space-y-12">
+          <div class="max-w-3xl space-y-4 gsap-reveal">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/40 text-purple-400 text-xs font-mono"
+            >
+              SECTION 11 // LOCALIZED TRANSLATION
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Localized Technical Advocacy &
+              <span class="text-purple-400">Bengali CS Dictionary</span>
+            </h2>
+            <p
+              class="text-slate-300 leading-relaxed text-justify text-sm md:text-base"
+            >
+              Language should never be a barrier to mastering advanced computer
+              science. Recognizing that many young students in Bangladesh
+              encounter friction with dense English engineering documentation,
+              Rayaan initiates localized CS translation modules. He translates
+              complex theoretical terms—such as dynamic programming invariants,
+              stack frame execution, and time complexity bounds—into intuitive,
+              culturally resonant Bengali explanations without sacrificing
+              technical precision.
+            </p>
+          </div>
+
+          <!-- Interactive CS Concept Translator Widget -->
+          <div
+            class="bg-slate-900/90 rounded-2xl p-6 md:p-8 border border-purple-500/30 glow-purple space-y-6 gsap-reveal"
+          >
+            <span
+              class="code-font text-xs font-bold text-purple-400 uppercase block border-b border-slate-800 pb-2"
+              >Interactive CS Concept Translator</span
+            >
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-3 code-font text-xs"
+            >
+              <button
+                onclick="translateConcept('dp')"
+                class="p-3 rounded-xl bg-purple-950/50 border border-purple-500/50 text-purple-300 hover:bg-purple-900/50 transition-all font-semibold"
+              >
+                Dynamic Programming
+              </button>
+              <button
+                onclick="translateConcept('dsu')"
+                class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:bg-slate-800 transition-all font-semibold"
+              >
+                Disjoint Set Union
+              </button>
+              <button
+                onclick="translateConcept('recursion')"
+                class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:bg-slate-800 transition-all font-semibold"
+              >
+                Recursion Stack
+              </button>
+              <button
+                onclick="translateConcept('complexity')"
+                class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:bg-slate-800 transition-all font-semibold"
+              >
+                Time Complexity
+              </button>
+            </div>
+
+            <!-- Output Card -->
+            <div
+              id="translator-output"
+              class="p-5 rounded-xl bg-slate-950 border border-slate-800 space-y-3"
+            >
+              <div class="flex justify-between items-center text-xs code-font">
+                <span class="text-purple-400 font-bold"
+                  >[SELECTED TERM: Dynamic Programming]</span
+                >
+                <span class="text-slate-500"
+                  >Bengali Conceptual Translation</span
+                >
+              </div>
+              <h4 class="text-xl font-bold text-slate-100 font-sans">
+                ডায়নামিক প্রোগ্রামিং (Dynamic Programming)
+              </h4>
+              <p
+                class="text-sm text-slate-300 leading-relaxed text-justify font-sans"
+              >
+                একটি জটিল সমস্যাকে ছোট ছোট সাব-প্রবলেমে (Sub-problems) বিভক্ত
+                করে, প্রতিটি সাব-প্রবলেমের সমাধান মেমোরিতে (Memoization) সংরক্ষণ
+                করে পরবর্তীতে পুনরায় ব্যবহার করার পদ্ধতি।
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 12: ENDING CONCLUSION (Infinite Gold) -->
+      <section
+        id="section12"
+        class="py-28 px-6 bg-slate-950 relative overflow-hidden"
+      >
+        <div
+          class="max-w-4xl mx-auto text-center space-y-8 relative z-10 gsap-reveal"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/40 text-amber-400 text-xs font-mono"
+          >
+            SECTION 12 // FUTURE ARCHITECTURE
+          </div>
+
+          <h2
+            class="text-4xl md:text-5xl font-extrabold text-white tracking-tight"
+          >
+            The Next Architecture
+          </h2>
+
+          <p
+            class="text-slate-300 text-base md:text-lg leading-relaxed text-justify max-w-2xl mx-auto"
+          >
+            The journey of engineering sovereign software systems is infinite.
+            As Rayaan Tasnim continues to push boundaries in discrete
+            mathematics, competitive algorithm design, and distributed
+            infrastructure, his vision remains clear: building open, highly
+            optimized technology that empowers human intelligence. The IDAI
+            Universe will continue to expand into distributed compute
+            frameworks, web assembly acceleration, and localized computer
+            science education for all.
+          </p>
+
+          <!-- Interactive Connection Input Terminal Component -->
+          <div
+            class="max-w-md mx-auto bg-slate-900 rounded-2xl p-6 border border-amber-500/40 glow-gold shadow-2xl space-y-4"
+          >
+            <span
+              class="code-font text-xs text-amber-400 font-bold block uppercase tracking-wider"
+              >CONNECT WITH RAYAAN</span
+            >
+
+            <form onsubmit="handleTerminalConnect(event)" class="space-y-3">
+              <input
+                type="email"
+                id="terminal-email"
+                required
+                placeholder="enter_your_email@domain.com"
+                class="w-full bg-slate-950 border border-slate-700 focus:border-amber-400 rounded-xl p-3 code-font text-xs text-slate-100 focus:outline-none transition-colors"
+              />
+              <button
+                type="submit"
+                class="w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold code-font text-xs transition-all transform hover:-translate-y-0.5"
+              >
+                DISPATCH CONNECTION REQUEST
+              </button>
+            </form>
+
+            <div
+              id="connect-feedback"
+              class="text-[11px] code-font text-slate-400"
+            >
+              System ready for external node communication.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer
+      class="w-full bg-slate-950 border-t border-slate-800/80 py-8 px-6 text-center code-font text-xs text-slate-400 text-justify"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div>
+          Authorized by
+          <span class="text-purple-400 font-bold">RAYAAN TASNIM</span> with
+          precision
+        </div>
+        <div class="flex gap-6 text-[11px] text-slate-400">
+          <span>© All rights reserved</span>
+          <span class="text-amber-400">© Olympiad Edge 2026</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+      // --- 1. SLIDE-OVER DASHBOARD OVERLAY LOGIC ---
+      const menuToggleBtn = document.getElementById("menu-toggle");
+      const menuCloseBtn = document.getElementById("menu-close");
+      const overlay = document.getElementById("dashboard-overlay");
+      const overlayPanel = document.getElementById("overlay-panel");
+      const overlayBackdrop = document.getElementById("overlay-backdrop");
+      const overlayLinks = document.querySelectorAll(".overlay-nav-link");
+
+      function openDashboard() {
+        overlay.classList.remove("pointer-events-none", "opacity-0");
+        overlay.classList.add("opacity-100");
+        overlayPanel.classList.remove("translate-x-full");
+        overlayPanel.classList.add("translate-x-0");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeDashboard() {
+        overlay.classList.add("pointer-events-none", "opacity-0");
+        overlay.classList.remove("opacity-100");
+        overlayPanel.classList.add("translate-x-full");
+        overlayPanel.classList.remove("translate-x-0");
+        document.body.style.overflow = "auto";
+      }
+
+      menuToggleBtn.addEventListener("click", openDashboard);
+      menuCloseBtn.addEventListener("click", closeDashboard);
+      overlayBackdrop.addEventListener("click", closeDashboard);
+
+      overlayLinks.forEach((link) => {
+        link.addEventListener("click", closeDashboard);
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeDashboard();
+        }
+      });
+
+      // --- 2. HERO CANVAS & DEBUG TERMINAL LOGIC ---
+      const heroCanvas = document.getElementById("hero-canvas");
+      if (heroCanvas) {
+        const ctx = heroCanvas.getContext("2d");
+        let width = (heroCanvas.width = heroCanvas.offsetWidth);
+        let height = (heroCanvas.height = heroCanvas.offsetHeight);
+
+        window.addEventListener("resize", () => {
+          width = heroCanvas.width = heroCanvas.offsetWidth;
+          height = heroCanvas.height = heroCanvas.offsetHeight;
+        });
+
+        const particles = Array.from({ length: 45 }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.8,
+          vy: (Math.random() - 0.5) * 0.8,
+          radius: Math.random() * 2 + 1,
+        }));
+
+        function drawParticles() {
+          ctx.clearRect(0, 0, width, height);
+          ctx.fillStyle = "#a855f7";
+          ctx.strokeStyle = "rgba(168, 85, 247, 0.15)";
+
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+
+            if (p.x < 0 || p.x > width) p.vx *= -1;
+            if (p.y < 0 || p.y > height) p.vy *= -1;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fill();
+
+            for (let j = i + 1; j < particles.length; j++) {
+              const p2 = particles[j];
+              const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+              if (dist < 120) {
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.stroke();
+              }
+            }
+          }
+          requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+      }
+
+      // Hero Typing Console Effect
+      const typingLine = document.getElementById("typing-line");
+      const consoleMessages = [
+        "> rayaan.getArchitectureState() => DETERMINISTIC",
+        "> Executing Pollard-Rho factorization benchmark...",
+        "> BdMO National Finalist 2026 Ready.",
+        "> Listening for kernel events...",
+      ];
+      let msgIndex = 0;
+      let charIndex = 0;
+
+      function typeConsole() {
+        if (!typingLine) return;
+        if (charIndex < consoleMessages[msgIndex].length) {
+          typingLine.textContent += consoleMessages[msgIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeConsole, 40);
+        } else {
+          setTimeout(() => {
+            typingLine.textContent = "";
+            charIndex = 0;
+            msgIndex = (msgIndex + 1) % consoleMessages.length;
+            typeConsole();
+          }, 2500);
+        }
+      }
+      typeConsole();
+
+      // --- 3. SECTION 2: CURRICULUM TREE MODULE SELECTOR ---
+      function selectTreeModule(modId) {
+        const detailBox = document.getElementById("tree-detail");
+        const treeButtons = document.querySelectorAll(
+          "#curriculum-tree button",
+        );
+
+        treeButtons.forEach((btn) => {
+          btn.className =
+            "p-3 rounded-xl bg-slate-950 border border-slate-800 text-left hover:bg-slate-800 transition-all text-slate-400 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400";
+        });
+
+        event.currentTarget.className =
+          "p-3 rounded-xl bg-blue-950/40 border border-blue-500/40 text-left hover:bg-blue-900/40 transition-all text-blue-300 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400";
+
+        const data = {
+          mod1: "<span class='text-blue-400 font-bold'>[Module 01: Binary & Logic]</span> Focuses on Truth Tables, Boolean Algebra, Binary Counting, and Hardware Logic Gate simulations using interactive paper kits.",
+          mod2: "<span class='text-blue-400 font-bold'>[Module 02: Algorithmic Flow]</span> Teaches pseudo-code design, branching conditionals, loop invariants, and flowchart mapping to cultivate computational thinking.",
+          mod3: "<span class='text-blue-400 font-bold'>[Module 03: Python Primitives]</span> Hands-on introduction to variables, data structures (lists, dicts), functions, and basic File I/O operations.",
+          mod4: "<span class='text-blue-400 font-bold'>[Module 04: Mini Projects]</span> Final capstone module where students build CLI calculators, text adventure games, and prime number verifiers.",
+        };
+
+        detailBox.innerHTML = data[modId] || data["mod1"];
+      }
+
+      // --- 4. SECTION 4: TIMELINE HIGHLIGHTER ---
+      function highlightTimeline(age) {
+        const detailBox = document.getElementById("timeline-detail-box");
+        const cards = document.querySelectorAll(".timeline-card");
+        cards.forEach((card) => {
+          card.className =
+            "timeline-card p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-pink-500/60 cursor-pointer transition-all";
+        });
+        event.currentTarget.className =
+          "timeline-card p-5 rounded-xl bg-pink-950/40 border border-pink-500/60 cursor-pointer transition-all";
+
+        const info = {
+          10: "AGE 10 — Built basic C++ console games, solved 300+ Euler math problems, learned elementary number theory.",
+          11: "AGE 11 — Competed in Bangladesh Mathematical Olympiad (BdMO) regional rounds; built first static web tools.",
+          12: "AGE 12 — Founded IDAI Universe repositories; authored custom C++ Fast-I/O templates for CP contests.",
+          13: "AGE 13 — BdMO National Finalist; launched Prime-Factor.app; active peer mentor at Dreamers Academy.",
+        };
+
+        detailBox.innerHTML = `<span>Selected Focus: ${info[age]}</span> <span class="text-slate-500">STATUS: VERIFIED</span>`;
+      }
+
+      // --- 5. SECTION 5: MINI MIND-MATH SIMULATOR ---
+      let currentTarget = 84;
+      let currentFactors = [2, 2, 3, 7];
+      let eloScore = 1200;
+      let timerInterval;
+      let timeLeft = 15;
+
+      function generateNewMathProblem() {
+        clearInterval(timerInterval);
+        const compositeNumbers = [
+          { num: 60, factors: [2, 2, 3, 5] },
+          { num: 84, factors: [2, 2, 3, 7] },
+          { num: 90, factors: [2, 3, 3, 5] },
+          { num: 126, factors: [2, 3, 3, 7] },
+          { num: 140, factors: [2, 2, 5, 7] },
+          { num: 180, factors: [2, 2, 3, 3, 5] },
+        ];
+        const pick =
+          compositeNumbers[Math.floor(Math.random() * compositeNumbers.length)];
+        currentTarget = pick.num;
+        currentFactors = pick.factors;
+
+        document.getElementById("target-number").textContent = currentTarget;
+        document.getElementById("factor-input").value = "";
+        document.getElementById("math-feedback").className =
+          "p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs code-font text-center text-slate-400";
+        document.getElementById("math-feedback").textContent =
+          "Type prime factors in ascending or space-separated order.";
+
+        startTimer();
+      }
+
+      function startTimer() {
+        timeLeft = 15;
+        const timerVal = document.getElementById("timer-val");
+        const timerBar = document.getElementById("timer-bar");
+
+        timerVal.textContent = timeLeft + "s";
+        timerBar.style.width = "100%";
+
+        timerInterval = setInterval(() => {
+          timeLeft--;
+          timerVal.textContent = timeLeft + "s";
+          timerBar.style.width = (timeLeft / 15) * 100 + "%";
+
+          if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            document.getElementById("math-feedback").className =
+              "p-3 rounded-lg bg-red-950/80 border border-red-500 text-xs code-font text-center text-red-300";
+            document.getElementById("math-feedback").textContent =
+              "TIMEOUT! Time expired. Click NEW to try again.";
+            eloScore = Math.max(1000, eloScore - 15);
+            document.getElementById("math-elo").textContent = eloScore;
+          }
+        }, 1000);
+      }
+
+      function checkFactorization() {
+        clearInterval(timerInterval);
+        const inputVal = document.getElementById("factor-input").value.trim();
+        const userFactors = inputVal
+          .split(/\s+/)
+          .map(Number)
+          .sort((a, b) => a - b);
+        const expected = [...currentFactors].sort((a, b) => a - b);
+
+        const isCorrect =
+          userFactors.length === expected.length &&
+          userFactors.every((val, index) => val === expected[index]);
+
+        const feedback = document.getElementById("math-feedback");
+        if (isCorrect) {
+          eloScore += 25;
+          document.getElementById("math-elo").textContent = eloScore;
+          feedback.className =
+            "p-3 rounded-lg bg-lime-950/80 border border-lime-500 text-xs code-font text-center text-lime-300";
+          feedback.textContent = `CORRECT! Prime factors of ${currentTarget} are [${expected.join(", ")}]. +25 Elo!`;
+        } else {
+          eloScore = Math.max(1000, eloScore - 10);
+          document.getElementById("math-elo").textContent = eloScore;
+          feedback.className =
+            "p-3 rounded-lg bg-red-950/80 border border-red-500 text-xs code-font text-center text-red-300";
+          feedback.textContent = `INCORRECT. Expected factors for ${currentTarget}: [${expected.join(", ")}].`;
+        }
+      }
+      startTimer();
+
+      // --- 6. SECTION 6: GITHUB HEATMAP MOCKUP ---
+      const heatmapContainer = document.getElementById("github-heatmap");
+      if (heatmapContainer) {
+        for (let i = 0; i < 96; i++) {
+          const cell = document.createElement("div");
+          const rand = Math.random();
+          let bgClass = "bg-slate-950 border border-slate-800";
+          if (rand > 0.7) bgClass = "bg-teal-900 border border-teal-700";
+          if (rand > 0.85) bgClass = "bg-teal-600 border border-teal-400";
+          if (rand > 0.95)
+            bgClass = "bg-teal-400 border border-teal-200 glow-teal";
+          cell.className = `h-3.5 w-full rounded-sm ${bgClass}`;
+          heatmapContainer.appendChild(cell);
+        }
+      }
+
+      function inspectDep(mod) {
+        const box = document.getElementById("dep-inspect-box");
+        const deps = {
+          kernel:
+            "<strong class='text-teal-400'>[idai-kernel-v4]</strong> Sovereign backend engine written in C++20, compiled to WASM for web microservices.",
+          math: "<strong class='text-teal-400'>[prime-engine]</strong> Pollard-Rho prime factorization library with sub-millisecond execution guarantees.",
+          cp: "<strong class='text-teal-400'>[fast-io-templates]</strong> Header-only Fast-I/O templates for Codeforces/CSES algorithmic speedup.",
+        };
+        box.innerHTML = deps[mod] || box.innerHTML;
+      }
+
+      // --- 7. SECTION 7: OLYMPIAD EDGE ROADMAP PHASE LOADER ---
+      function loadRoadmapPhase(phaseNum) {
+        const preview = document.getElementById("roadmap-preview");
+        const nodes = document.querySelectorAll(".roadmap-node");
+
+        nodes.forEach(
+          (node) =>
+            (node.className =
+              "roadmap-node p-6 rounded-xl bg-slate-950 border border-slate-800 hover:border-yellow-400 cursor-pointer transition-all space-y-3"),
+        );
+        event.currentTarget.className =
+          "roadmap-node p-6 rounded-xl bg-slate-950 border border-yellow-500/40 hover:border-yellow-400 cursor-pointer transition-all space-y-3";
+
+        const data = {
+          1: "<span class='text-yellow-400 font-bold block'>[PHASE 01 SYLLABUS]</span> Recommended Books: 'Problem-Solving Strategies' by Arthur Engel, 'Number Theory' by Titu Andreescu. Practice 50 problems on modular arithmetic invariants.",
+          2: "<span class='text-yellow-400 font-bold block'>[PHASE 02 SYLLABUS]</span> Focus on Chinese Remainder Theorem, Eulerian Graphs, Polynomial Roots over Finite Fields, and Invariant Proofs from past BdMO National Finals.",
+          3: "<span class='text-yellow-400 font-bold block'>[PHASE 03 SYLLABUS]</span> Advanced IMO Shortlist problems: Vieta Jumping, Cauchy-Schwarz Functional Equations, and Projective Invariants.",
+        };
+        preview.innerHTML = data[phaseNum];
+      }
+
+      // --- 8. SECTION 8: CP BENCHMARK SIMULATOR ---
+      function runBenchmarkSim() {
+        const stdTime = document.getElementById("std-time");
+        const fastTime = document.getElementById("fast-time");
+        const stdBar = document.getElementById("std-bar");
+        const fastBar = document.getElementById("fast-bar");
+
+        stdTime.textContent = "BENCHMARKING...";
+        fastTime.textContent = "BENCHMARKING...";
+        stdBar.style.width = "10%";
+        fastBar.style.width = "10%";
+
+        setTimeout(() => {
+          const sVal = Math.floor(Math.random() * 50) + 400;
+          const fVal = Math.floor(sVal / 4);
+          stdTime.textContent = sVal + " ms";
+          fastTime.textContent = fVal + " ms";
+          stdBar.style.width = "85%";
+          fastBar.style.width = "22%";
+        }, 800);
+      }
+
+      // --- 9. SECTION 9: REAL-TIME LATENCY CANVAS SIMULATOR ---
+      const latCanvas = document.getElementById("latency-canvas");
+      if (latCanvas) {
+        const lCtx = latCanvas.getContext("2d");
+        let lWidth = (latCanvas.width = latCanvas.offsetWidth);
+        let lHeight = (latCanvas.height = latCanvas.offsetHeight);
+
+        window.addEventListener("resize", () => {
+          lWidth = latCanvas.width = latCanvas.offsetWidth;
+          lHeight = latCanvas.height = latCanvas.offsetHeight;
+        });
+
+        const points = Array.from(
+          { length: 40 },
+          () => Math.random() * 30 + 10,
+        );
+
+        function drawLatencyGraph() {
+          lCtx.clearRect(0, 0, lWidth, lHeight);
+          lCtx.beginPath();
+          lCtx.strokeStyle = "#06b6d4";
+          lCtx.lineWidth = 2;
+
+          const step = lWidth / (points.length - 1);
+          for (let i = 0; i < points.length; i++) {
+            const x = i * step;
+            const y = lHeight - points[i];
+            if (i === 0) lCtx.moveTo(x, y);
+            else lCtx.lineTo(x, y);
+          }
+          lCtx.stroke();
+
+          // Shift points
+          points.shift();
+          points.push(Math.random() * 35 + 10);
+
+          // Update Telemetry Text
+          const currentAvg = (
+            points.reduce((a, b) => a + b, 0) /
+            points.length /
+            20
+          ).toFixed(2);
+          document.getElementById("avg-lat").textContent = currentAvg + "ms";
+        }
+        setInterval(drawLatencyGraph, 200);
+      }
+
+      // --- 10. SECTION 10: MATH SOLUTION ACCORDION ---
+      function toggleMathSolution() {
+        const box = document.getElementById("math-solution-box");
+        const arrow = document.getElementById("accordion-arrow");
+        if (box.classList.contains("hidden")) {
+          box.classList.remove("hidden");
+          arrow.textContent = "▲";
+        } else {
+          box.classList.add("hidden");
+          arrow.textContent = "▼";
+        }
+      }
+
+      // --- 11. SECTION 11: BENGALI CS TRANSLATOR WIDGET ---
+      function translateConcept(conceptKey) {
+        const output = document.getElementById("translator-output");
+        const buttons = document.querySelectorAll("#section11 button");
+        buttons.forEach(
+          (b) =>
+            (b.className =
+              "p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:bg-slate-800 transition-all font-semibold"),
+        );
+        event.currentTarget.className =
+          "p-3 rounded-xl bg-purple-950/50 border border-purple-500/50 text-purple-300 hover:bg-purple-900/50 transition-all font-semibold";
+
+        const dict = {
+          dp: {
+            title: "ডায়নামিক প্রোগ্রামিং (Dynamic Programming)",
+            desc: "একটি জটিল সমস্যাকে ছোট ছোট সাব-প্রবলেমে (Sub-problems) বিভক্ত করে, প্রতিটি সাব-প্রবলেমের সমাধান মেমোরিতে (Memoization) সংরক্ষণ করে পরবর্তীতে পুনরায় ব্যবহার করার পদ্ধতি।",
+          },
+          dsu: {
+            title: "ডিসজয়েন্ট সেট ইউনিয়ন (Disjoint Set Union - DSU)",
+            desc: "একটি বিশেষ ডেটা স্ট্রাকচার যা একাধিক উপসেটের (Subsets) ইউনিয়ন এবং কোনো এলিমেন্ট কোন সেটে আছে তা খুব দ্রুত নির্ণয় করতে সাহায্য করে।",
+          },
+          recursion: {
+            title: "রিকালশন স্ট্যাক (Recursion Stack)",
+            desc: "একটি ফাংশন যখন নিজেকে পুনরায় কল করে, তখন প্রতিটি কলের স্টেট মেমোরির স্ট্যাক ফ্রেমে সংরক্ষিত থাকার প্রক্রিয়া।",
+          },
+          complexity: {
+            title: "টাইম কমপ্লেক্সিটি (Time Complexity)",
+            desc: "ইনপুটের সাইজ বৃদ্ধির সাথে সাথে অ্যালগরিদমের এক্সিকিউশন টাইম কীভাবে বৃদ্ধি পায় তার গাণিতিক পরিমাপ (যেমন: Big-O Notation)।",
+          },
+        };
+
+        const selected = dict[conceptKey] || dict["dp"];
+        output.innerHTML = `
+                <div class="flex justify-between items-center text-xs code-font">
+                    <span class="text-purple-400 font-bold">[SELECTED TERM: ${selected.title.split(" ")[0]}]</span>
+                    <span class="text-slate-500">Bengali Conceptual Translation</span>
+                </div>
+                <h4 class="text-xl font-bold text-slate-100 font-sans">${selected.title}</h4>
+                <p class="text-sm text-slate-300 leading-relaxed text-justify font-sans">${selected.desc}</p>
+            `;
+      }
+
+      // --- 12. SECTION 12: TERMINAL DISPATCH FORM ---
+      function handleTerminalConnect(e) {
+        e.preventDefault();
+        const emailInput = document.getElementById("terminal-email");
+        const feedback = document.getElementById("connect-feedback");
+
+        feedback.className =
+          "text-[11px] code-font text-emerald-400 font-bold animate-pulse";
+        feedback.textContent = `[SUCCESS] Connection request logged for ${emailInput.value}. Rayaan's node will reply via SMTP.`;
+        emailInput.value = "";
+      }
+
+      // --- 13. GSAP + SCROLLTRIGGER ANIMATION INITIALIZATION ---
+      window.addEventListener("load", () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const revealElements = document.querySelectorAll(".gsap-reveal");
+        revealElements.forEach((el) => {
+          gsap.from(el, {
+            scrollTrigger: {
+              trigger: el,
+              start: "top 85%",
+              toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            y: 45,
+            duration: 0.9,
+            ease: "power2.out",
+            stagger: 0.15,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
